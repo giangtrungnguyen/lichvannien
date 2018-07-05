@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Lich Van Nien</title>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<!-- <link rel="stylesheet" href="font-awesome.min.css"> -->
+
+<!-- <link rel="stylesheet" href="http://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css"> -->
+
+<link rel="stylesheet" href="css/materialdesignicons.min.css">
+
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/popper.js@1.12.5/dist/umd/popper.js" integrity="sha384-KlVcf2tswD0JOTQnzU4uwqXcbAy57PvV48YUiLjqpk/MJ2wExQhg9tuozn5A1iVw" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.0.0-beta.3/dist/css/bootstrap-material-design.min.css" integrity="sha384-k5bjxeyx3S5yJJNRD1eKUMdgxuvfisWKku5dwHQq9Q/Lz6H8CyL89KF52ICpX4cL" crossorigin="anonymous">
+<script src="https://unpkg.com/bootstrap-material-design@4.0.0-beta.3/dist/js/bootstrap-material-design.js" integrity="sha384-hC7RwS0Uz+TOt6rNG8GX0xYCJ2EydZt1HeElNwQqW+3udRol4XwyBfISrNDgQcGA" crossorigin="anonymous"></script> -->
+
+
+<script language="javascript" type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+
+	<!-- calendar start -->
+    <div class="left">
+        
+        <div class="calendar-header">
+            
+                
+                    
+                        <div class="col-btn">
+                            <button class="btn-prev-month" id="btn-prev-month" type="button"><i class="mdi mdi-chevron-left"></i></button>
+                        </div>
+                    
+                    <div class="month-name" id="month-name">Thg 10</div>
+                    
+                        <div class="col-btn">
+                            <button class="btn-next-month" id="btn-next-month" type="button"><i class="mdi mdi-chevron-right"></i></button>
+                        </div>
+                    
+                
+            
+        </div>
+        <div class="ltop" id="c_top" style="display: none;">
+            <p>
+                <font id="date" class="dayinfo">2012年9月18日</font><font class="dayinfo">  </font><font id="lunar_info" class="lunar_dayinfo">壬辰年[龙] 八月初三</font>
+            </p>
+        </div>
+
+        <div id="loading" style="clear:both;padding-top:150px;height:242px;text-align:center">Đang nạp dữ liệu...</div>
+    	<table id="cm" class="ldays">
+        </table>
+		<div id="bm"></div>
+        <div class="lbuttom" id="c_buttom" style="display: none;">
+            <span class="navigator">DL:
+            <select></select>&nbsp;年&nbsp;
+            <select></select>&nbsp;月&nbsp;
+            <button class="btn btn-primary"><i class="mdi mdi-chevron-double-left"></i>NT</button>
+            <button class="btn btn-primary"><i class="mdi mdi-chevron-left"></i>TT</button>
+            <button class="btn btn-primary">TS<i class="mdi mdi-chevron-right"></i></button>
+            <button class="btn btn-primary">NS<i class="mdi mdi-chevron-double-right"></i></button>
+            <button class="btn btn-primary"><i class="mdi mdi-calendar-today"></i>HN</button>
+            &nbsp;&nbsp;&nbsp;
+            </span>
+        </div>
+        <hr/>
+        <div id="day-detail"></div>
+
+
+    </div>
+	<!-- calendar end -->
+
+<script language="javascript" type="text/javascript" src="holidays.js"></script>
+<script language="javascript" type="text/javascript" src="festivals.js"></script>
+<script language="javascript" type="text/javascript" src="calendar.js"></script>
+
+</body>
+</html>
